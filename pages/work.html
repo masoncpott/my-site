@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Portfolio | Mason Pott - Design Consultant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 51, 102, 0.15);
+        }
+
+        .portfolio-item-header {
+            background: linear-gradient(135deg, #003366, #004d80);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portfolio-item-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-item-header p {
+            opacity: 0.9;
+        }
+
+        .portfolio-item-content {
+            padding: 1.5rem;
+        }
+
+        .portfolio-item-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .project-tag {
+            background: #f0f0f0;
+            color: #003366;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="nav-brand">MP</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Work Hero Section -->
+    <section class="hero" style="min-height: 400px; padding: 4rem 2rem;">
+        <h1>My Work</h1>
+        <p class="tagline">Design Projects & Case Studies</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="about">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-item-header">
+                    <h3>Digital Transformation Initiative</h3>
+                    <p>Enterprise Platform Design</p>
+                </div>
+                <div class="portfolio-item-content">
+                    <p>Led the redesign of a complex enterprise platform serving 10,000+ users. Implemented user research, created design systems, and delivered a modern interface that increased user adoption by 40%.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">UX/UI Design</span>
+                        <span class="project-tag">Design Systems</span>
+                        <span class="project-tag">User Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-item-header">
+                    <h3>Mobile-First Redesign</h3>
+                    <p>Consumer App Experience</p>
+                </div>
+                <div class="portfolio-item-content">
+                    <p>Redesigned a consumer-facing mobile application with a focus on accessibility and user delight. The new design reduced support tickets by 35% and improved app ratings from 3.2 to 4.6 stars.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Mobile Design</span>
+                        <span class="project-tag">UX Research</span>
+                        <span class="project-tag">Accessibility</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-item-header">
+                    <h3>Design System Creation</h3>
+                    <p>Multi-Brand Component Library</p>
+                </div>
+                <div class="portfolio-item-content">
+                    <p>Built a comprehensive design system serving multiple product teams across different brands. Reduced design-to-development time by 50% and improved design consistency across all products.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Design Systems</span>
+                        <span class="project-tag">Component Library</span>
+                        <span class="project-tag">Scalability</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-item-header">
+                    <h3>Brand Experience Design</h3>
+                    <p>Omnichannel Brand Strategy</p>
+                </div>
+                <div class="portfolio-item-content">
+                    <p>Designed a cohesive brand experience across web, mobile, and physical touchpoints. Developed brand guidelines and visual systems that unified the customer experience across all channels.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Brand Strategy</span>
+                        <span class="project-tag">Visual Design</span>
+                        <span class="project-tag">Brand Guidelines</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-item-header">
+                    <h3>Healthcare Portal Redesign</h3>
+                    <p>Patient Experience Platform</p>
+                </div>
+                <div class="portfolio-item-content">
+                    <p>Redesigned a healthcare patient portal with focus on accessibility and simplicity. Improved patient engagement metrics by 60% and decreased task completion time by 45%.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Healthcare Design</span>
+                        <span class="project-tag">Accessibility</span>
+                        <span class="project-tag">User Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-item-header">
+                    <h3>E-Commerce Optimization</h3>
+                    <p>Checkout Experience Redesign</p>
+                </div>
+                <div class="portfolio-item-content">
+                    <p>Optimized the checkout flow for a major e-commerce platform, reducing cart abandonment by 25% and increasing conversion rates by 18% through research-driven design improvements.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">E-Commerce</span>
+                        <span class="project-tag">Conversion Optimization</span>
+                        <span class="project-tag">A/B Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mason Pott. Designed with care. Powered by good design principles.</p>
+    </footer>
+</body>
+</html>

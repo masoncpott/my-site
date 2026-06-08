@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mason Pott | Design Consultant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .contact-page {
+            background: white;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #00cccc;
+        }
+
+        .contact-info h3 {
+            color: #003366;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .info-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item strong {
+            color: #003366;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-item a {
+            color: #00cccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-item a:hover {
+            color: #003366;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .contact-form h3 {
+            color: #003366;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #003366;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #00cccc;
+            box-shadow: 0 0 0 3px rgba(0, 204, 204, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #003366, #004d80);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="nav-brand">MP</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="hero" style="min-height: 400px; padding: 4rem 2rem;">
+        <h1>Let's Connect</h1>
+        <p class="tagline">I'd love to hear about your next project</p>
+    </section>
+
+    <!-- Contact Page Content -->
+    <section class="contact-page">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <strong>Email</strong>
+                    <a href="mailto:mason.pott@slalom.com">mason.pott@slalom.com</a>
+                </div>
+                <div class="info-item">
+                    <strong>Phone</strong>
+                    <p>Available upon request</p>
+                </div>
+                <div class="info-item">
+                    <strong>LinkedIn</strong>
+                    <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/masonpott</a>
+                </div>
+                <div class="info-item">
+                    <strong>Location</strong>
+                    <p>Based with Slalom Consulting</p>
+                </div>
+                <div class="info-item">
+                    <strong>Availability</strong>
+                    <p>Open to discussing new projects and opportunities</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mason Pott. Designed with care. Powered by good design principles.</p>
+    </footer>
+</body>
+</html>
